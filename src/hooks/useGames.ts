@@ -1,4 +1,5 @@
 import useData from "./useData";
+import { Genre } from "./useGenres";
 
 export interface Platform {
     id: number;
@@ -14,6 +15,7 @@ export interface Game {
     metacritic: number;
 }
 
-const useGames =() => useData<Game>('/games')
+// add an optional array of dependencies that causes the component to rerender whenever the selectedGames parameter is passed
+const useGames =(selectedGenre: Genre | null) => useData<Game>('/games', { params: { genres: selectedGenre?.id}}, [selectedGenre?.id])
 
 export default useGames
