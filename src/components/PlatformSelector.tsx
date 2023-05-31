@@ -11,6 +11,7 @@ interface Props {
 const PlatformSelector = ({ onSelectPlatform, selectedPlatform }: Props) => {
   const { data, error } = usePlatforms();
 
+  //unnecessary now but left in in case we don't want to ship platforms
   if (error) return null;
 
   return (
