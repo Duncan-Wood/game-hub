@@ -13,6 +13,7 @@ export interface Game {
     background_image: string
     parent_platforms: {platform: Platform }[]
     metacritic: number;
+    rating_top: number
 }
 
 // add an optional array of dependencies that causes the component to rerender whenever the selectedGames parameter is passed
