@@ -23,7 +23,7 @@ function App() {
     <Grid
       templateAreas={{
         base: `'nav' 'main'`,
-        lg: `'nav nav' 'aside main'`, //1024px
+        lg: `'nav nav' 'aside main'`,
       }}
       templateColumns={{
         base: "1fr",
@@ -44,7 +44,7 @@ function App() {
         </GridItem>
       </Show>
       <GridItem area="main">
-        <Box paddingLeft={2}>
+        <Box paddingLeft={10}>
           <Gameheading gameQuery={gameQuery} />
           <Flex marginBottom={5}>
             {/* something is wrong with this margin */}
