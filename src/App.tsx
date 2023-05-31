@@ -47,7 +47,6 @@ function App() {
         <Box paddingLeft={10}>
           <Gameheading gameQuery={gameQuery} />
           <Flex marginBottom={5}>
-            {/* something is wrong with this margin */}
             <Box marginRight={5}>
               <PlatformSelector
                 selectedPlatform={gameQuery.platform}
